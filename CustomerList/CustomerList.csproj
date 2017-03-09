@@ -174,9 +174,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201703091222404_InitialMigration.cs" />
-    <Compile Include="Migrations\201703091222404_InitialMigration.Designer.cs">
-      <DependentUpon>201703091222404_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201703091338089_InitialMigration.cs" />
+    <Compile Include="Migrations\201703091338089_InitialMigration.Designer.cs">
+      <DependentUpon>201703091338089_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703091339424_CreateCustomerTable.cs" />
+    <Compile Include="Migrations\201703091339424_CreateCustomerTable.Designer.cs">
+      <DependentUpon>201703091339424_CreateCustomerTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703091341314_PopulateCustomersTable.cs" />
+    <Compile Include="Migrations\201703091341314_PopulateCustomersTable.Designer.cs">
+      <DependentUpon>201703091341314_PopulateCustomersTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -255,8 +263,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201703091222404_InitialMigration.resx">
-      <DependentUpon>201703091222404_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703091338089_InitialMigration.resx">
+      <DependentUpon>201703091338089_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703091339424_CreateCustomerTable.resx">
+      <DependentUpon>201703091339424_CreateCustomerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703091341314_PopulateCustomersTable.resx">
+      <DependentUpon>201703091341314_PopulateCustomersTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

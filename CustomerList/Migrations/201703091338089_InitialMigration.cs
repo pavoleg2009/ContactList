@@ -8,18 +8,6 @@ namespace CustomerList.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.Customers",
-                c => new
-                    {
-                        Id = c.Int(nullable: false, identity: true),
-                        FristName = c.String(nullable: false),
-                        LastName = c.String(nullable: false),
-                        PhoneNumber = c.String(),
-                        Email = c.String(),
-                    })
-                .PrimaryKey(t => t.Id);
-            
-            CreateTable(
                 "dbo.AspNetRoles",
                 c => new
                     {
@@ -106,7 +94,6 @@ namespace CustomerList.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
-            DropTable("dbo.Customers");
         }
     }
 }
