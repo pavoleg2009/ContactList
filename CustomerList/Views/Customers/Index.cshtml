@@ -1,4 +1,4 @@
-﻿@model dynamic
+﻿@model List<CustomerList.Models.Customer>
 
 @{
     ViewBag.Title = "title";
@@ -6,3 +6,5 @@
 }
 
 <h2>Customers</h2>
+
+@Html.ActionLink("New Customer", "New", "Customers", new { @class = "btn btn-primary" })
