@@ -24,15 +24,8 @@ namespace CustomerList.Controllers
         // GET: Customers
         public ActionResult Index()
         {   
-            var customers = new List<Customer>
-            {
-                new Customer { FristName = "John", LastName = "Smith"},
-                new Customer { FristName = "Barak", LastName = "Obama"},
-                new Customer { FristName = "Lucy", LastName = "Lyu"},
-                new Customer { FristName = "Poll", LastName = "Pott"},
-                new Customer { FristName = "Michel", LastName = "Jackson"}
-            };
-            return View(customers);
+
+            return View();
         }
 
         public ActionResult New(string s)
