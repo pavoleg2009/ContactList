@@ -22,3 +22,39 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#cusomerPageHeader {
+    padding: 15px;
+}
+
+label.error {
+    color: rgb(200, 0, 0);
+}
+
+.input-validation-error,
+input.error {
+    border: 2px solid rgb(200, 0, 0);
+}
+
+.table .col1 {
+    width: 21%;
+}
+.table .col2 {
+    width: 21%;
+}
+.table .col3 {
+    width: 21%;
+}
+.table .col4 {
+    width: 21%;
+}
+.table .col5 {
+    width: 10%;
+}
+.table .col6 {
+    width: 6%;
+}
+
+.table tbody tr td {
+    vertical-align: middle;
+}
