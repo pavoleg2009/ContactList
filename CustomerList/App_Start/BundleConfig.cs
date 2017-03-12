@@ -20,6 +20,18 @@ namespace CustomerList
                         "~/Scripts/toastr.js"
                         ));
 
+            bundles.Add(new ScriptBundle("~/bundles/angularMetro").Include(
+                        "~/Scripts/angular.min.js",
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/metro.min.js",
+
+                
+                        "~/Scripts/Front/Angular/main.js",
+                        "~/Scripts/Front/Angular/customersListController.js",
+                        "~/Scripts/Front/Angular/customersService.js",
+                        "~/Scripts/Front/Angular/customersFactory.js"
+                        ));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
@@ -39,6 +51,11 @@ namespace CustomerList
                       "~/Content/font-awesome.min.css",
                       "~/Content/toastr.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/cssAngularMetro").Include(
+                      "~/Content/metro.min.css",
+                      "~/Scripts/metro-responsive.min.css",
+                      "~/Content/siteAngular.css"));
         }
     }
 }

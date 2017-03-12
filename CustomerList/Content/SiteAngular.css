@@ -1,0 +1,41 @@
+﻿body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%
+}
+html,
+body,
+* {
+  box-sizing: border-box;
+}
+
+.body-content {
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.table .col1 {
+    width: 21%;
+}
+.table .col2 {
+    width: 21%;
+}
+.table .col3 {
+    width: 21%;
+}
+.table .col4 {
+    width: 21%;
+}
+.table .col5 {
+    width: 10%;
+}
+.table .col6 {
+    width: 6%;
+}
+
+.table tbody tr td {
+    vertical-align: middle;
+}

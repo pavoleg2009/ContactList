@@ -1,8 +1,44 @@
 ﻿
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutAngular.cshtml";
 }
 
-<h2>Angular Index</h2>
+<div ng-controller="CustomerListController">
+    <h2>Angular Index {{1+1}}</h2>
+
+    <table class="table striped hovered">
+        <thead>
+            <tr>
+                <th class="col1">First Name</th>
+                <th class="col2">Last Name</th>
+                <th class="col3">Email</th>
+                <th class="col4">Phone Number</th>
+                <th class="col5">Actions</th>
+                <th class="col6">Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            @*| filter:sensitiveSearch | orderBy:order*@
+        <tr ng-repeat="person in filteredPersons = (contacts.persons)"
+            ng-style="{
+                'background-color': person.email == contacts.selectedPerson.email ? 'lightgray' : ''}"
+            ng-click="contacts.selectedPerson = person">
+            <td>{{ person.firstName }}</td>
+            <td>{{ person.lastName }}</td>
+            <td>{{ person.email }}</td>
+            <td>{{ person.phoneNumber }}</td>
+            <td></td>
+            <td>{{ person.id }}</td>
+
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+@section scripts {
+
+}
 
